@@ -1,0 +1,166 @@
+header
+  position: fixed
+  width: 296px
+  height: auto
+  background-color: #fff
+  .header-content
+    height: 947px
+    @media screen and (min-width: 481px) and (max-width: 1367px)
+      height: 650px
+    @media screen and (min-width: 1367px) and (max-width: 1919px)
+      height: 890px
+    .header-content__logo
+      padding: 48.16px 44.81px 60.67px 53.51px
+      @media screen and (min-width: 481px) and (max-width: 1367px)
+        padding: 48.16px 44.81px 20.67px 53.51px
+      img
+        height: 73.17px
+        width: 197.68px
+    .nav
+      padding: 0px 60px 38px 35px
+      border-bottom: 1px solid #e5e5e5
+      @media screen and (min-width: 481px) and (max-width: 1919px)
+        padding: 0 60px 0px 35px
+      ul
+        padding: 0
+        list-style-type: none
+        li
+          height: 46px
+          font-size: 18px
+          @media screen and (min-width: 481px) and (max-width: 1367px)
+            height: 36px
+    .header-content__contacts
+      padding: 44px 0px 92.5px 0px
+      @media screen and (min-width: 481px) and (max-width: 1919px)
+        padding: 14px 0 12.5px 0
+      button
+        margin: 0px 20px
+        color: white
+        background: #74BB20
+        font-size: 15px
+        border: 0px
+      .phone
+        p 
+          padding: 22px 63px 0px 63px
+          font-size: 18px
+          span
+            color: #74BB20
+      .recall
+        padding: 0px 95px 0px 96px
+        a
+          color: #74BB20
+          font-size: 13px
+          border-bottom: 1px solid
+    .header-content__bottom
+      padding: 0px 0px 28.5px 0px
+      border-bottom: 1px solid #e5e5e5
+      @media screen and (min-width: 481px) and (max-width: 1367px)
+        padding: 0
+      & > div
+        width: 50% 
+      .ru > span, .en > span
+        font-size: 16px
+      .ru > span
+        padding-right: 22px
+      .en > span
+        padding-left: 22px
+      .ru
+        border-right: 1px solid black
+    .social
+      height: 74px
+      padding-top: 17px
+      & > div
+        width: 50% 
+      .facebook > img
+        padding-left: 117px
+      .instagramm > img
+        padding-right: 127px
+/*Mobile header*/
+@media screen and (min-width: 360px) and (max-width: 1130px)
+  .mobile-header
+    position: relative
+    width: 100%
+    .header-content
+      justify-content: space-between
+      height: 86px
+      .header-content__logo 
+        padding: 25.5px 41.19px 22.5px 11px
+        img
+          width: 89.81px
+          height: 38px
+      .header-content_cb
+        display: flex
+        flex-direction: column-reverse
+        .header-content__bottom 
+          padding: 0
+          border-bottom: 0px 
+      .nav
+        order: 1
+        width: 60px
+        padding: 0
+        ul
+          display: none
+      .header-content__contacts 
+        padding: 0
+        .phone p
+          font-size: 14px
+          padding: 0
+        button
+          display: none
+        .recall
+          display: none
+      .social
+        display: none !important
+.ham 
+  display: none
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+  transition: transform 400ms
+  -moz-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
+.hamRotate.active 
+  transform: rotate(45deg)
+.hamRotate180.active 
+  transform: rotate(180deg)
+.ham8 .top 
+  stroke-dasharray: 40 160
+.ham8 .middle 
+  stroke-dasharray: 40 142
+  transform-origin: 50%
+  transition: transform 400ms
+.ham8 .bottom 
+  stroke-dasharray: 40 85
+  transform-origin: 50%
+  transition: transform 400ms, stroke-dashoffset 400ms
+.ham8.active .top 
+  stroke-dashoffset: -64px
+.ham8.active .middle 
+  //stroke-dashoffset: -20px;
+  transform: rotate(90deg)
+.ham8.active .bottom 
+  stroke-dashoffset: -64px
+.line 
+  fill: none
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms
+  stroke:#000
+  stroke-width: 5.5
+  stroke-linecap: round
+.menu-open
+  display: block !important
+  width: 100%
+  position: absolute
+  top: 86px
+  left: 0
+  background: white
+  z-index: 100
+.menu-open-landscape
+  display: flex !important
+  justify-content: space-between
+  width: 100%
+  position: absolute
+  top: 86px
+  left: 0
+  background: white
+  z-index: 100
