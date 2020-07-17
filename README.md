@@ -1,2 +1,3 @@
 # GulpPug
+dist/index.html
  
