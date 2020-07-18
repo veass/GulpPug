@@ -552,14 +552,13 @@ ul li a:hover {
   }
 
   header .header-content .header-content__logo {
-    padding: 20.5px 41.19px 22.5px 11px;
+    padding: 20.5px 21.19px 22.5px 11px;
   }
 
   header .header-content .header-content__nav {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 60px;
     padding: 0;
   }
 
