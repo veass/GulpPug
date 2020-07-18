@@ -27,6 +27,8 @@ h1, h2, h3, p, span
   display: flex
   @media screen and ( min-width: 1900px )
     max-width: 1920px
+  @media screen and (min-width: 360px) and (max-width: 1367px)
+    flex-direction: column
   @media screen and (min-width: 360px) and (max-width: 480px)
     width: 360px
   // @media screen and (min-width: 481px) and (max-width: 1000px)
@@ -35,7 +37,7 @@ h1, h2, h3, p, span
   //   max-width: 1440px
 .content-block
   margin-left: 296px
-  @media screen and (min-width: 360px) and (max-width: 1130px)
+  @media screen and (min-width: 360px) and (max-width: 1367px)
     width: 100%
     margin-left: 0
     padding: 0 10px
