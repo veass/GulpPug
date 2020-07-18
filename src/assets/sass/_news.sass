@@ -1,20 +1,38 @@
 .news
   padding: 55px 0px 0px 0px
   background: white
-  @media screen and (min-width: 360px) and (max-width: 1100px)
+  @media screen and (min-width: 360px) and (max-width: 480px)
     flex-direction: column
     padding: 0px
     align-items: center
+  @media screen and (min-width: 481px) and (max-width: 1367px)
+    flex-direction: row
+    padding: 0px
+    align-items: center
+  @media screen and (min-width: 481px) and (max-width: 1100px)
+    align-items: center
+    justify-content: center
   .news-active
     border-right: 1px solid #e5e5e5
     width: 58.5%
     padding-left: 47px
     @media screen and (min-width: 360px) and (max-width: 480px)
+      display: flex
+      flex-direction: column
       width: auto
       padding-left: 0px
     @media screen and (min-width: 481px) and (max-width: 1100px)
       width: 70%
       padding-left: 0px
+      padding-top: 5%
+    .button-news
+      order: 1
+      text-align: center
+      padding: 16px 0
+      border: 1px solid
+      margin-top: 50px
+      span
+        font-size: 14px
   .news-active__top
     h2
       font-size: 28px
@@ -33,9 +51,11 @@
   .news-active__bottom
     margin-top: 28px   
     .new-item-block
+      display: flex
+      flex-direction: column
       width: 45%
       margin-right: 63px
-      @media screen and (min-width: 360px) and (max-width: 1100px)
+      @media screen and (min-width: 360px) and (max-width: 1367px)
         width: 100%
         margin-right: 0
       .new-item
@@ -55,13 +75,16 @@
             font-size: 12px
         .data-info
           margin-bottom: 0
+    .new-item-block:nth-child(2)
+      @media screen and (min-width: 360px) and (max-width: 1367px)
+        display: none
   .news-archive
     width: 41.5%
     padding: 0px 57px 0px 60px
+    @media screen and (min-width: 360px) and (max-width: 1100px)
+      display: none
     .info
       height: 150px
-      @media screen and (min-width: 360px) and (max-width: 1100px)
-        display: none
       @media screen and (max-width: 1400px)
         height: auto
       .data-info:hover 
