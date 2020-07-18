@@ -83,7 +83,7 @@ html
                   .new-item.d-flex.flex-column
                     img(src="img/news-1.jpg", alt="")
                     <svg width="167" height="2" viewBox="0 0 167 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0.828217L166.302 0.82823" stroke="black"/>
+                      <path d="M0 0.828217L166.302 0.82823" stroke="black"/>
                     </svg>
                     p.data 28.01.2020
                     p.data-info Крупная сделка в недвижимости: группа компаний «А-100» приобрела завод железобетонных конструкций
@@ -132,49 +132,56 @@ html
           .map-content.float-right
             .contacts
               h1.text-uppercase Контакты
-              .accordion#accordionExample
-                .card
-                  .contacts-content__elem.card-header.d-flex.justify-content-between
-                    .span-text
-                      span.text-uppercase А-100 девелопмент
-                    .switch-button
-                      div(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
-                        img.rotate(src="img/arrow.jpg")                              
-                  #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
-                    .card-body 
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta iusto, natus
-                .card
-                  .contacts-content__elem.card-header.d-flex.justify-content-between
-                    .span-text
-                      span.text-uppercase А-100 риэлт
-                    .switch-button
-                      div(type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne")
-                        img.rotate(src="img/arrow.jpg")                               
-                  #collapseTwo.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
-                    .card-body 
-                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta iusto, natus
-                .card
-                  .contacts-content__elem.card-header.d-flex.justify-content-between
-                    .span-text
-                      span.text-uppercase СБК «Современные бетонные конструкции»
-                    .switch-button
-                      div(type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne")
-                        img.rotate(src="img/arrow.jpg" style="transform: rotate(180deg)")                               
-                  #collapseThree.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
-                    .card-body 
-                      p Республика Беларусь, 223039, Минская обл., Минский р-н, Хатежинский с/с, район деревни д. Таборы, 29/1, Здание АКБ
-                      p + 375 17 513-20-40 + 375 17 513-20-53
-                      p.text-uppercase Больше контактов
-                .card
-                  .contacts-content__elem.card-header.d-flex.justify-content-between
-                    .span-text
-                      span.text-uppercase А-100 комфорт
-                    .switch-button
-                      div(type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne")
-                        img.rotate(src="img/arrow.jpg")                             
-                  #collapseFour.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
-                    .card-body 
-                      p ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta iusto, natus
+              #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+                .accordion.carousel-inner#accordionExample
+                  .card.carousel-item.active
+                    .contacts-content__elem.card-header.d-flex.justify-content-between
+                      .span-text
+                        span.text-uppercase А-100 девелопмент
+                      .switch-button
+                        div(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                          img.rotate(src="img/arrow.jpg")                              
+                    #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
+                      .card-body 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta iusto, natus
+                  .card.carousel-item
+                    .contacts-content__elem.card-header.d-flex.justify-content-between
+                      .span-text
+                        span.text-uppercase А-100 риэлт
+                      .switch-button
+                        div(type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne")
+                          img.rotate(src="img/arrow.jpg")                               
+                    #collapseTwo.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
+                      .card-body 
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta iusto, natus
+                  .card.carousel-item
+                    .contacts-content__elem.card-header.d-flex.justify-content-between
+                      .span-text
+                        span.text-uppercase СБК «Современные бетонные конструкции»
+                      .switch-button
+                        div(type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne")
+                          img.rotate(src="img/arrow.jpg" style="transform: rotate(180deg)")                               
+                    #collapseThree.collapse.show(aria-labelledby="headingOne" data-parent="#accordionExample")
+                      .card-body 
+                        p Республика Беларусь, 223039, Минская обл., Минский р-н, Хатежинский с/с, район деревни д. Таборы, 29/1, Здание АКБ
+                        p + 375 17 513-20-40 + 375 17 513-20-53
+                        p.text-uppercase Больше контактов
+                  .card.carousel-item
+                    .contacts-content__elem.card-header.d-flex.justify-content-between
+                      .span-text
+                        span.text-uppercase А-100 комфорт
+                      .switch-button
+                        div(type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne")
+                          img.rotate(src="img/arrow.jpg")                             
+                    #collapseFour.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
+                      .card-body 
+                        p ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta iusto, natus
+                a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+                  span.carousel-control-prev-icon(aria-hidden='true')
+                  span.sr-only Previous
+                a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+                  span.carousel-control-next-icon(aria-hidden='true')
+                  span.sr-only Next
         footer
           .footer-content
             p Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой

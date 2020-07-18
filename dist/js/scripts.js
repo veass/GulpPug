@@ -33,50 +33,46 @@ $('.switch-button').click(function(){
  
   // Regroup our blocks\
 
-// let news = $('.button-news');
+let news = $('.button-news');
 
 
-// function resizeForheader(){
+function resizeForheader(){
 
-//   news.detach()
-//   $('.news-active__bottom').append(news);
-//   news.css({
-//     'text-align': 'center',
-//     'padding': '16px 0',
-//     'border': '1px solid',
-//     'margin-top': '50px'
-//   })
-//   news.find('span').html('Все новости')
-//                    .css({'font-size': '14px'})
-//   // $('.news-active__bottom').removeClass('flex-row');
-//   // $('.news-active__bottom').addClass('flex-column');
-//   // $('.new-item svg').detach();    
-// }
-// function getBacktoheader(){
-//   $('.news-active__bottom').removeClass('flex-column');
-//   $('.news-active__bottom').addClass('flex-row');
-//   $('.news-active__top').append(news);
-//   news.css({
-//     'border-top': '1px solid',
-//     'margin-top': '0px'
-//   })
+  news.detach()
+  $('.news-active__bottom').append(news);
+  news.css({
+    'text-align': 'center',
+    'padding': '16px 0',
+    'border': '1px solid',
+    'margin-top': '50px'
+  })
+  news.find('span').html('Все новости')
+                   .css({'font-size': '14px'})
+  // $('.news-active__bottom').removeClass('flex-row');
+  // $('.news-active__bottom').addClass('flex-column');
+  // $('.new-item svg').detach();    
+}
+function slider(){
+  
+}
+function sliderBack(){
 
-// }
+}
 
-//   if(($(window).width() >= 360 && $(window).width() <= 1100)){
-//     resizeForheader();
+  if(($(window).width() >= 360 && $(window).width() <= 480)){
+    slider()
     
-//   }
+  }
 
-//   $(window).resize(function(){
-//     if($(window).width() >= 360 && $(window).width()<= 1100){
-//       resizeForheader();
+  $(window).resize(function(){
+    if($(window).width() >= 360 && $(window).width()<= 480){
+      sliderBack()
 
-//     }
-//     if($(window).width() > 1100){
-//       getBacktoheader();
-//     }
-//   })
+    }
+    if($(window).width() > 1100){
+      sliderBack()
+    }
+  })
 
 //menu 
 

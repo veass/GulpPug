@@ -26,11 +26,12 @@
       padding-left: 0px
       padding-top: 5%
     .button-news
-      order: 1
-      text-align: center
-      padding: 16px 0
-      border: 1px solid
-      margin-top: 50px
+      @media screen and (min-width: 360px) and (max-width: 480px)
+        order: 1
+        text-align: center
+        padding: 16px 0
+        border: 1px solid
+        margin-top: 50px
       span
         font-size: 14px
   .news-active__top
@@ -62,9 +63,8 @@
         height: 387px
         @media screen and (min-width: 360px) and (max-width: 1100px)
           height: auto
-        img:hover ~ svg
-          // display: none
-          fill: green
+        img:hover ~ svg > path
+          stroke: green
         svg
           display: block
           margin-top: 29px

@@ -310,16 +310,6 @@ header .header-content .header-content__social .instagramm > img {
   padding-left: 47px;
 }
 
-.news .news-active .button-news {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  text-align: center;
-  padding: 16px 0;
-  border: 1px solid;
-  margin-top: 50px;
-}
-
 .news .news-active .button-news span {
   font-size: 14px;
 }
@@ -362,8 +352,8 @@ header .header-content .header-content__social .instagramm > img {
   height: 387px;
 }
 
-.news .news-active__bottom .new-item-block .new-item img:hover ~ svg {
-  fill: green;
+.news .news-active__bottom .new-item-block .new-item img:hover ~ svg > path {
+  stroke: green;
 }
 
 .news .news-active__bottom .new-item-block .new-item svg {
@@ -417,36 +407,6 @@ header .header-content .header-content__social .instagramm > img {
 
 .map .map-content .contacts h1 {
   font-size: 30px;
-}
-
-.map .map-content .contacts .accordion .card {
-  border-bottom: 1px solid #e5e5e5;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-}
-
-.map .map-content .contacts .accordion .card p {
-  font-size: 16px;
-}
-
-.map .map-content .contacts .accordion .card .card-body p:last-child {
-  width: 30%;
-  border-top: 1px solid;
-}
-
-.map .map-content .contacts .accordion .card .contacts-content__elem {
-  padding-left: 0;
-  height: auto;
-  background: white;
-}
-
-.map .map-content .contacts .accordion .card .contacts-content__elem .span-text {
-  font-size: 18px;
-}
-
-.map .map-content .contacts .accordion .card-body {
-  padding-left: 0;
 }
 
 footer {
@@ -532,6 +492,56 @@ ul li a {
 
 ul li a:hover {
   color: black;
+}
+
+@media screen and (min-width: 481px) {
+  .map .map-content .contacts .accordion .card {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .map .map-content .contacts .accordion .card p {
+    font-size: 16px;
+  }
+
+  .map .map-content .contacts .accordion .card .card-body p:last-child {
+    width: 30%;
+    border-top: 1px solid;
+  }
+
+  .map .map-content .contacts .accordion .card .contacts-content__elem {
+    padding-left: 0;
+    height: auto;
+    background: white;
+  }
+
+  .map .map-content .contacts .accordion .card .contacts-content__elem .span-text {
+    font-size: 18px;
+  }
+
+  .map .map-content .contacts .accordion .card-body {
+    padding-left: 0;
+  }
+
+  div .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  #carouselExampleCaptions {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -809,6 +819,16 @@ ul li a:hover {
     padding-left: 0px;
   }
 
+  .news .news-active .button-news {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+    padding: 16px 0;
+    border: 1px solid;
+    margin-top: 50px;
+  }
+
   .news .news-active__top h2 {
     font-size: 24px;
     text-align: center;
@@ -843,12 +863,12 @@ ul li a:hover {
     font-size: 14px;
   }
 
-  .map .map-content .contacts .accordion .card .card-body p:last-child {
-    width: 44%;
-  }
-
   .map .map-content .contacts .accordion .card .contacts-content__elem .span-text {
     font-size: 15px;
+  }
+
+  .map .map-content .contacts .accordion .card .contacts-content__elem .switch-button {
+    display: none;
   }
 
   .container-xxl {

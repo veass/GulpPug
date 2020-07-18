@@ -25,26 +25,50 @@
           padding: 20px 0px
       .accordion
         .card
-          border-bottom: 1px solid #e5e5e5 
-          border-top: 0
-          border-right: 0
-          border-left: 0
+          @media screen and (min-width: 481px) 
+            border-bottom: 1px solid #e5e5e5 
+            border-top: 0
+            border-right: 0
+            border-left: 0
           p
-            font-size: 16px
+            @media screen and (min-width: 481px) 
+              font-size: 16px
             @media screen and (min-width: 360px) and (max-width: 480px)
               font-size: 14px
           .card-body p:last-child
-            width: 30%
-            border-top: 1px solid
-            @media screen and (min-width: 360px) and (max-width: 480px)
-              width: 44%
+            @media screen and (min-width: 481px) 
+              width: 30%
+              border-top: 1px solid
           .contacts-content__elem
-            padding-left: 0
-            height: auto
-            background: white
+            @media screen and (min-width: 481px) 
+              padding-left: 0
+              height: auto
+              background: white
             .span-text
-              font-size: 18px
+              @media screen and (min-width: 481px) 
+                font-size: 18px
               @media screen and (min-width: 360px) and (max-width: 480px)
                 font-size: 15px
+            .switch-button
+              @media screen and (min-width: 360px) and (max-width: 480px)
+                display: none
         .card-body
-          padding-left: 0
+          @media screen and (min-width: 481px) 
+            padding-left: 0
+div .collapsing
+  @media screen and (min-width: 481px) 
+    position: relative
+    height: 0
+    overflow: hidden
+    transition: height 1s ease
+//carusel
+.carousel-control-prev,.carousel-control-next
+  @media screen and (min-width: 481px)
+    display: none
+#carouselExampleCaptions
+  @media screen and (min-width: 481px)
+    display: none
+
+
+
+
