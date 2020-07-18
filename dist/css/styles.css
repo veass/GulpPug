@@ -592,10 +592,6 @@ ul li a:hover {
     display: none;
   }
 
-  header .header-content .header-content__phone .header-content__phone__bottom {
-    padding: 0;
-  }
-
   header .header-content .header-content__social {
     display: none !important;
   }
@@ -619,9 +615,15 @@ ul li a:hover {
   }
 }
 
-@media screen and (min-width: 1368px) and (max-width: 1919px) {
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
   header .header-content {
     height: 890px;
+  }
+}
+
+@media screen and (min-width: 1368px) and (max-width: 1919px) {
+  header .header-content {
+    height: auto;
   }
 
   header .header-content .header-content__phone .header-content__phone__contacts {
@@ -662,6 +664,16 @@ ul li a:hover {
 
   .images .images__elem .naming p {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1368px) and (max-width: 1600px) {
+  header .header-content .header-content__logo {
+    padding: 28.16px 44.81px 30.67px 53.51px;
+  }
+
+  header .header-content .header-content__nav {
+    padding: 0 60px 10px 35px;
   }
 }
 
@@ -780,6 +792,12 @@ ul li a:hover {
 @media screen and (min-width: 360px) and (max-width: 1367px) and (min-width: 360px) and (max-width: 480px) {
   header .header-content .header-content__phone {
     height: 75px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1600px) {
+  header .header-content .header-content__phone .header-content__phone__bottom {
+    padding: 0;
   }
 }
 
