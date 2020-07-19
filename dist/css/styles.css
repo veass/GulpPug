@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 header {
   position: fixed;
   width: 296px;
@@ -402,11 +404,54 @@ header .header-content .header-content__social .instagramm > img {
 .map .map-content .contacts {
   padding: 46px 38px 33px 63px;
   max-width: 674px;
-  background: white;
 }
 
 .map .map-content .contacts h1 {
   font-size: 30px;
+  background: white;
+  margin-bottom: 0 !important;
+}
+
+.map .map-content .contacts .carousel {
+  height: 332px;
+}
+
+.map .map-content .contacts .carousel .carousel-inner {
+  height: 100%;
+}
+
+.map .map-content .contacts .accordion .card .contacts-content__elem {
+  background: white;
+}
+
+a.carousel-control-prev,
+a.carousel-control-next {
+  top: 5px;
+  width: 22px;
+  position: absolute;
+  height: 40px;
+}
+
+.contacts-content__elem {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white !important;
+}
+
+.carousel-item.active {
+  background: transparent;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 footer {
@@ -443,6 +488,7 @@ html {
 body {
   height: auto;
   background: #76707073 !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 img {
@@ -458,7 +504,6 @@ p,
 span {
   margin: 0;
   padding: 0;
-  font-style: Roboto;
 }
 
 .container-xxl {
@@ -494,6 +539,14 @@ ul li a:hover {
   color: black;
 }
 
+@media screen and (min-width: 360px) and (min-width: 480px) {
+  .contacts-content__elem {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 481px) {
   .map .map-content .contacts .accordion .card {
     border-bottom: 1px solid #e5e5e5;
@@ -514,7 +567,6 @@ ul li a:hover {
   .map .map-content .contacts .accordion .card .contacts-content__elem {
     padding-left: 0;
     height: auto;
-    background: white;
   }
 
   .map .map-content .contacts .accordion .card .contacts-content__elem .span-text {
@@ -539,8 +591,10 @@ ul li a:hover {
     display: none;
   }
 
-  #carouselExampleCaptions {
-    display: none;
+  .contacts-content__elem {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -844,13 +898,19 @@ ul li a:hover {
     font-size: 14px;
   }
 
+  .map {
+    height: 400px;
+  }
+
   .map .map-content {
     margin-top: 0;
+    height: 100%;
   }
 
   .map .map-content .contacts {
     width: auto;
     padding: 0;
+    height: 100%;
   }
 
   .map .map-content .contacts h1 {
@@ -867,8 +927,16 @@ ul li a:hover {
     font-size: 15px;
   }
 
-  .map .map-content .contacts .accordion .card .contacts-content__elem .switch-button {
+  .switch-button {
     display: none;
+  }
+
+  .collapse.mobile-show {
+    background: white;
+  }
+
+  .mobile-show {
+    display: block !important;
   }
 
   .container-xxl {

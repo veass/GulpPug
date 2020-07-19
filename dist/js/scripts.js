@@ -30,55 +30,48 @@ $('.switch-button').click(function(){
   }
   })
 
- 
-  // Regroup our blocks\
+//Trash
+let accordion = $('.accordion');
+let carousel = $('.carousel');
+let carouselInner = $('.carousel-inwner');
+let card = $('.card');
+let carouselItem = $('.carousel-item')
+let active = $('.active')
 
-let news = $('.button-news');
-
-
-function resizeForheader(){
-
-  news.detach()
-  $('.news-active__bottom').append(news);
-  news.css({
-    'text-align': 'center',
-    'padding': '16px 0',
-    'border': '1px solid',
-    'margin-top': '50px'
-  })
-  news.find('span').html('Все новости')
-                   .css({'font-size': '14px'})
-  // $('.news-active__bottom').removeClass('flex-row');
-  // $('.news-active__bottom').addClass('flex-column');
-  // $('.new-item svg').detach();    
+//adding classes
+function adding(){
+  carousel.addClass('accordion')
+  card.addClass('carouselItem')
 }
-function slider(){
-  
-}
-function sliderBack(){
-
+//removing classes
+function removing(){
+  accordion.removeClass('carousel')
+  carouselItem.removeClass('card')
 }
 
-  if(($(window).width() >= 360 && $(window).width() <= 480)){
-    slider()
-    
+if(($(window).width() >= 360 && $(window).width() <= 480)){
+  removing()
+}
+if(($(window).width() > 480 )){
+  adding()
+}
+
+$(window).resize(function(){
+  if($(window).width() >= 360 && $(window).width()<= 480){
+    removing()
+
   }
-
-  $(window).resize(function(){
-    if($(window).width() >= 360 && $(window).width()<= 480){
-      sliderBack()
-
-    }
-    if($(window).width() > 1100){
-      sliderBack()
-    }
-  })
+  if($(window).width() > 1100){
+    sliderBack()
+  }
+})
 
 //menu 
 
     $('.ham').click(function(){
       $('nav > ul').toggleClass('menu-open');
     })
+//carousel
 
     // display: block;
     // width: -webkit-max-content;

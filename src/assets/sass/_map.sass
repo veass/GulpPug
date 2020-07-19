@@ -1,11 +1,14 @@
 .map
   background: url('../img/map.jpg') no-repeat
   height: 734px
+  @media screen and (min-width: 360px) and (max-width: 480px)
+    height: 400px
   .map-content
     margin-top: 52px
     width: 42%
     @media screen and (min-width: 360px) and (max-width: 480px)
       margin-top: 0
+      height: 100%
     @media screen and (min-width: 700px) and (max-width: 1100px)
       width: 60%
     @media screen  and (max-width: 699px)
@@ -13,16 +16,22 @@
     .contacts
       padding: 46px 38px 33px 63px
       max-width: 674px
-      background: white
       @media screen and (min-width: 360px) and (max-width: 480px)
         width: auto
         padding: 0
+        height: 100%
       h1
         font-size: 30px
+        background: white
+        margin-bottom: 0 !important
         @media screen and (min-width: 360px) and (max-width: 480px)
           font-size: 24px
           text-align: center
           padding: 20px 0px
+      .carousel
+        height: 332px
+        .carousel-inner
+          height: 100%
       .accordion
         .card
           @media screen and (min-width: 481px) 
@@ -40,18 +49,16 @@
               width: 30%
               border-top: 1px solid
           .contacts-content__elem
+            background: white
             @media screen and (min-width: 481px) 
               padding-left: 0
               height: auto
-              background: white
+              // background: white
             .span-text
               @media screen and (min-width: 481px) 
                 font-size: 18px
               @media screen and (min-width: 360px) and (max-width: 480px)
                 font-size: 15px
-            .switch-button
-              @media screen and (min-width: 360px) and (max-width: 480px)
-                display: none
         .card-body
           @media screen and (min-width: 481px) 
             padding-left: 0
@@ -65,10 +72,34 @@ div .collapsing
 .carousel-control-prev,.carousel-control-next
   @media screen and (min-width: 481px)
     display: none
-#carouselExampleCaptions
-  @media screen and (min-width: 481px)
+// #carouselExampleCaptions
+//   @media screen and (min-width: 481px)
+//     display: none
+a.carousel-control-prev , a.carousel-control-next
+  top: 5px
+  width: 22px
+  position: absolute
+  height: 40px
+.contacts-content__elem
+  justify-content: center
+  background-color: white !important
+  @media screen and (min-width: 360px) and (min-width: 480px)
+    justify-content: center
+  @media screen and (min-width: 481px) 
+    justify-content: space-between
+.switch-button
+  @media screen and (min-width: 360px) and (max-width: 480px)
     display: none
-
-
-
-
+  // добавление active для пк версии
+.carousel-item.active
+  background: transparent
+  flex-direction: column
+  height: 100%
+  justify-content: space-between
+  display: flex !important
+.collapse.mobile-show
+  @media screen and (min-width: 360px) and (max-width: 480px)
+    background: white
+.mobile-show
+  @media screen and (min-width: 360px) and (max-width: 480px) 
+    display: block !important
