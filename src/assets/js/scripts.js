@@ -52,8 +52,6 @@ function accordion(){
   carouselInner.addClass('accordion')
   accordionExample.removeClass('carousel-inner')
   card.removeClass('carousel-item')
-  
-  // carouselItem.removeClass('card')
 }
 
 if(($(window).width() > 480 )){
@@ -74,13 +72,3 @@ $(window).resize(function(){
     $('.ham').click(function(){
       $('nav > ul').toggleClass('menu-open');
     })
-//carousel
-//Добаили класс аккордион
-//
-//
-//
-//
-//
-//
-//
-//
