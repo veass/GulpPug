@@ -28,6 +28,8 @@
           font-size: 24px
           text-align: center
           padding: 20px 0px
+        @media screen and (min-width: 481px)
+          padding-left: 20px 
       .carousel
         height: 332px
         .carousel-inner
@@ -46,12 +48,12 @@
               font-size: 14px
           .card-body p:last-child
             @media screen and (min-width: 481px) 
-              width: 30%
+              // width: 30%
               border-top: 1px solid
           .contacts-content__elem
             background: white
             @media screen and (min-width: 481px) 
-              padding-left: 0
+              padding-left: 20px
               height: auto
               // background: white
             .span-text
@@ -61,7 +63,7 @@
                 font-size: 15px
         .card-body
           @media screen and (min-width: 481px) 
-            padding-left: 0
+            padding-left: 20px
 div .collapsing
   @media screen and (min-width: 481px) 
     position: relative
@@ -69,17 +71,14 @@ div .collapsing
     overflow: hidden
     transition: height 1s ease
 //carusel
-.carousel-control-prev,.carousel-control-next
-  @media screen and (min-width: 481px)
-    display: none
-// #carouselExampleCaptions
-//   @media screen and (min-width: 481px)
-//     display: none
-a.carousel-control-prev , a.carousel-control-next
+
+.carousel-control-prev , .carousel-control-next
   top: 5px
   width: 22px
   position: absolute
   height: 40px
+  @media screen and (min-width: 481px)
+    display: none !important
 .contacts-content__elem
   justify-content: center
   background-color: white !important
@@ -87,6 +86,7 @@ a.carousel-control-prev , a.carousel-control-next
     justify-content: center
   @media screen and (min-width: 481px) 
     justify-content: space-between
+    padding: 20px
 .switch-button
   @media screen and (min-width: 360px) and (max-width: 480px)
     display: none

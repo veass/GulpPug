@@ -424,8 +424,8 @@ header .header-content .header-content__social .instagramm > img {
   background: white;
 }
 
-a.carousel-control-prev,
-a.carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   top: 5px;
   width: 22px;
   position: absolute;
@@ -548,6 +548,10 @@ ul li a:hover {
 }
 
 @media screen and (min-width: 481px) {
+  .map .map-content .contacts h1 {
+    padding-left: 20px;
+  }
+
   .map .map-content .contacts .accordion .card {
     border-bottom: 1px solid #e5e5e5;
     border-top: 0;
@@ -560,12 +564,11 @@ ul li a:hover {
   }
 
   .map .map-content .contacts .accordion .card .card-body p:last-child {
-    width: 30%;
     border-top: 1px solid;
   }
 
   .map .map-content .contacts .accordion .card .contacts-content__elem {
-    padding-left: 0;
+    padding-left: 20px;
     height: auto;
   }
 
@@ -574,7 +577,7 @@ ul li a:hover {
   }
 
   .map .map-content .contacts .accordion .card-body {
-    padding-left: 0;
+    padding-left: 20px;
   }
 
   div .collapsing {
@@ -588,13 +591,14 @@ ul li a:hover {
 
   .carousel-control-prev,
   .carousel-control-next {
-    display: none;
+    display: none !important;
   }
 
   .contacts-content__elem {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 20px;
   }
 }
 
@@ -739,7 +743,7 @@ ul li a:hover {
     display: none;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 50px;
+    height: auto;
   }
 
   header .header-content .header-content__nav ul li {

@@ -30,39 +30,42 @@ $('.switch-button').click(function(){
   }
   })
 
-//Trash
-let accordion = $('.accordion');
-let carousel = $('.carousel');
-let carouselInner = $('.carousel-inwner');
+//variables
+let accordionExample = $('#accordionExample');
+let carouselvar = $('.carousel');
+let carouselInner = $('.carousel-inner');
 let card = $('.card');
 let carouselItem = $('.carousel-item')
 let active = $('.active')
+let carouselExampleCaptions = $('#carouselExampleCaptions')
 
 //adding classes
-function adding(){
-  carousel.addClass('accordion')
-  card.addClass('carouselItem')
+function carousel(){
+  carouselExampleCaptions.addClass('carousel slide pointer-event')
+  accordionExample.removeClass('accordion')
+  accordionExample.addClass('carousel-inner')
+  card.addClass('carousel-item')
 }
-//removing classes
-function removing(){
-  accordion.removeClass('carousel')
-  carouselItem.removeClass('card')
+//accordion classes
+function accordion(){
+  carouselExampleCaptions.removeClass('carousel slide pointer-event')
+  carouselInner.addClass('accordion')
+  accordionExample.removeClass('carousel-inner')
+  card.removeClass('carousel-item')
+  
+  // carouselItem.removeClass('card')
 }
 
-if(($(window).width() >= 360 && $(window).width() <= 480)){
-  removing()
-}
 if(($(window).width() > 480 )){
-  adding()
+  accordion()
 }
 
 $(window).resize(function(){
-  if($(window).width() >= 360 && $(window).width()<= 480){
-    removing()
-
+  if($(window).width() >= 360 && $(window).width()<= 480){  
+    carousel()
   }
-  if($(window).width() > 1100){
-    sliderBack()
+  if($(window).width() > 480){
+    accordion()
   }
 })
 
@@ -72,11 +75,12 @@ $(window).resize(function(){
       $('nav > ul').toggleClass('menu-open');
     })
 //carousel
-
-    // display: block;
-    // width: -webkit-max-content;
-    // width: -moz-max-content;
-    // width: max-content;
-    // padding: 9px 0;
-    // margin-top: 18px;
-    // border-top: 2px solid #000;
+//Добаили класс аккордион
+//
+//
+//
+//
+//
+//
+//
+//
