@@ -57,7 +57,7 @@ header .header-content .header-content__phone .header-content__phone__contacts .
 }
 
 header .header-content .header-content__phone .header-content__phone__contacts .recall {
-  padding: 0px 95px 0px 96px;
+  padding: 0px 80px 0px 96px;
 }
 
 header .header-content .header-content__phone .header-content__phone__contacts .recall a {
@@ -747,7 +747,7 @@ ul li a:hover {
   }
 
   header .header-content .header-content__nav ul li {
-    height: 30px;
+    height: 40px;
     font-size: 2vw;
   }
 
@@ -978,6 +978,12 @@ ul li a:hover {
 
   .button-news {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1367px) {
+  .news .news-active {
+    padding: 0px 100px;
   }
 }
 
